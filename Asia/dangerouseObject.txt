@@ -1,0 +1,1234 @@
+Name:CVE-2010-0661
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0661
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0661
+ CONFIRM:http://code.google.com/p/chromium/issues/detail?id=30660
+ CONFIRM:http://googlechromereleases.blogspot.com/2010/01/stable-channel-update_25.html
+ CONFIRM:http://sites.google.com/a/chromium.org/dev/Home/chromium-security/chromium-security-bugs
+ CONFIRM:http://trac.webkit.org/changeset/52401
+ CONFIRM:https://bugs.webkit.org/show_bug.cgi?id=32647
+ CONFIRM:http://flock.com/security/
+ SUSE:SUSE-SR:2011:002
+ URL:http://lists.opensuse.org/opensuse-security-announce/2011-01/msg00006.html
+ OVAL:oval:org.mitre.oval:def:14482
+ URL:https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A14482
+ SECTRACK:1023506
+ URL:http://securitytracker.com/id?1023506
+ SECUNIA:43068
+ URL:http://secunia.com/advisories/43068
+ VUPEN:ADV-2011-0212
+ URL:http://www.vupen.com/english/advisories/2011/0212
+Description: WebCore/bindings/v8/custom/V8DOMWindowCustom.cpp in WebKit before
+r52401, as used in Google Chrome before 4.0.249.78, allows remote
+attackers to bypass the Same Origin Policy via vectors involving the
+window.open method.
+
+Name:CVE-2010-0662
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0662
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0662
+ CONFIRM:http://code.google.com/p/chromium/issues/detail?id=31307
+ CONFIRM:http://googlechromereleases.blogspot.com/2010/01/stable-channel-update_25.html
+ CONFIRM:http://sites.google.com/a/chromium.org/dev/Home/chromium-security/chromium-security-bugs
+ OVAL:oval:org.mitre.oval:def:14457
+ URL:https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A14457
+ SECTRACK:1023506
+ URL:http://securitytracker.com/id?1023506
+ XF:googlechrome-paramtraits-dos(56627)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56627
+Description: The ParamTraits<SkBitmap>::Read function in
+common/common_param_traits.cc in Google Chrome before 4.0.249.78 does
+not use the correct variables in calculations designed to prevent
+integer overflows, which allows attackers to leverage renderer access
+to cause a denial of service or possibly have unspecified other impact
+via bitmap data, related to deserialization.
+
+Name:CVE-2010-0663
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0663
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0663
+ CONFIRM:http://code.google.com/p/chromium/issues/detail?id=31307
+ CONFIRM:http://googlechromereleases.blogspot.com/2010/01/stable-channel-update_25.html
+ CONFIRM:http://sites.google.com/a/chromium.org/dev/Home/chromium-security/chromium-security-bugs
+ OVAL:oval:org.mitre.oval:def:14002
+ URL:https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A14002
+ SECTRACK:1023506
+ URL:http://securitytracker.com/id?1023506
+Description: The ParamTraits<SkBitmap>::Read function in
+common/common_param_traits.cc in Google Chrome before 4.0.249.78 does
+not initialize the memory locations that will hold bitmap data, which
+might allow remote attackers to obtain potentially sensitive
+information from process memory by providing insufficient data,
+related to use of a (1) thumbnail database or (2) HTML canvas.
+
+Name:CVE-2010-0664
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0664
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0664
+ MISC:http://exchange.kg/other/chrome3_0day-denial_of_service_crash.html
+ MISC:http://twitter.com/akirsanov/statuses/7370288490
+ CONFIRM:http://code.google.com/p/chromium/issues/detail?id=31517
+ CONFIRM:http://googlechromereleases.blogspot.com/2010/01/stable-channel-update_25.html
+ CONFIRM:http://sites.google.com/a/chromium.org/dev/Home/chromium-security/chromium-security-bugs
+ OVAL:oval:org.mitre.oval:def:14097
+ URL:https://oval.cisecurity.org/repository/search/definition/oval%3Aorg.mitre.oval%3Adef%3A14097
+ SECTRACK:1023506
+ URL:http://securitytracker.com/id?1023506
+Description: Stack consumption vulnerability in the
+ChildProcessSecurityPolicy::CanRequestURL function in
+browser/child_process_security_policy.cc in Google Chrome before
+4.0.249.78 allows remote attackers to cause a denial of service
+(memory consumption and application crash) via a URL that specifies
+multiple protocols, as demonstrated by a URL that begins with many
+repetitions of the view-source: substring.
+
+Name:CVE-2010-0665
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0665
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0665
+ EXPLOIT-DB:11406
+ URL:http://www.exploit-db.com/exploits/11406
+ XF:jag-database-info-disclosure(56228)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56228
+Description: JAG (Just Another Guestbook) 1.14 stores sensitive information under
+the web root with insufficient access control, which allows remote
+attackers to obtain sensitive information via a direct request for
+jag/database.sql.
+
+Name:CVE-2010-0666
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0666
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0666
+ CONFIRM:http://www.novell.com/support/php/search.do?cmd=displayKC&docType=kc&externalId=InfoDocument-patchbuilder-readme5067743&sliceId=&docTypeID=DT_SUSESDB_PSDB_1_1&dialogID=122457794&stateId=0%200%20122459671
+ CONFIRM:http://www.novell.com/support/viewContent.do?externalId=3426981
+ SECTRACK:1023558
+ URL:http://www.securitytracker.com/id?1023558
+ VUPEN:ADV-2010-0334
+ URL:http://www.vupen.com/english/advisories/2010/0334
+Description: Unspecified vulnerability in eMBox in Novell eDirectory 8.8 SP5 Patch
+2 and earlier allows remote attackers to cause a denial of service
+(crash) via unknown a crafted SOAP request, a different issue than
+CVE-2008-0926.
+
+Name:CVE-2010-0667
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0667
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0667
+ MLIST:[oss-security] 20100121 CVE request: MoinMoin information disclosure
+ URL:http://www.openwall.com/lists/oss-security/2010/01/21/6
+ MLIST:[oss-security] 20100215 CVE Request -- MoinMoin -- 1.8.7
+ URL:http://www.openwall.com/lists/oss-security/2010/02/15/2
+ MLIST:[oss-security] 20100215 Re: CVE Request -- MoinMoin -- 1.8.7
+ URL:http://marc.info/?l=oss-security&m=126625972814888&w=2
+ MLIST:[oss-security] 20100221 Re: CVE Request -- MoinMoin -- 1.8.7
+ URL:http://marc.info/?l=oss-security&m=126676896601156&w=2
+ CONFIRM:http://hg.moinmo.in/moin/1.9/raw-file/1.9.1/docs/CHANGES
+ CONFIRM:http://hg.moinmo.in/moin/1.9/rev/04afdde50094
+ CONFIRM:http://hg.moinmo.in/moin/1.9/rev/9d8e7ce3c3a2
+ CONFIRM:http://moinmo.in/MoinMoinChat/Logs/moin-dev/2010-01-18
+ CONFIRM:http://moinmo.in/SecurityFixes
+ SECUNIA:38242
+ URL:http://secunia.com/advisories/38242
+Description: MoinMoin 1.9 before 1.9.1 does not perform the expected clearing of
+the sys.argv array in situations where the GATEWAY_INTERFACE
+environment variable is set, which allows remote attackers to obtain
+sensitive information via unspecified vectors.
+
+Name:CVE-2010-0668
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0668
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0668
+ MLIST:[oss-security] 20100215 CVE Request -- MoinMoin -- 1.8.7
+ URL:http://www.openwall.com/lists/oss-security/2010/02/15/2
+ MLIST:[oss-security] 20100215 Re: CVE Request -- MoinMoin -- 1.8.7
+ URL:http://marc.info/?l=oss-security&m=126625972814888&w=2
+ MLIST:[oss-security] 20100221 Re: CVE Request -- MoinMoin -- 1.8.7
+ URL:http://marc.info/?l=oss-security&m=126676896601156&w=2
+ CONFIRM:http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=569975
+ CONFIRM:http://hg.moinmo.in/moin/1.8/raw-file/1.8.7/docs/CHANGES
+ CONFIRM:http://moinmo.in/MoinMoinRelease1.8
+ CONFIRM:http://moinmo.in/SecurityFixes
+ CONFIRM:https://bugzilla.redhat.com/show_bug.cgi?id=565604
+ DEBIAN:DSA-2014
+ URL:http://www.debian.org/security/2010/dsa-2014
+ FEDORA:FEDORA-2010-1712
+ URL:http://lists.fedoraproject.org/pipermail/package-announce/2010-February/035438.html
+ FEDORA:FEDORA-2010-1743
+ URL:http://lists.fedoraproject.org/pipermail/package-announce/2010-February/035374.html
+ BID:38023
+ URL:http://www.securityfocus.com/bid/38023
+ OSVDB:62043
+ URL:http://www.osvdb.org/62043
+ SECUNIA:38444
+ URL:http://secunia.com/advisories/38444
+ SECUNIA:38709
+ URL:http://secunia.com/advisories/38709
+ SECUNIA:38903
+ URL:http://secunia.com/advisories/38903
+ VUPEN:ADV-2010-0266
+ URL:http://www.vupen.com/english/advisories/2010/0266
+ VUPEN:ADV-2010-0600
+ URL:http://www.vupen.com/english/advisories/2010/0600
+ XF:moinmoin-superuser-unspecified(56002)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56002
+Description: Unspecified vulnerability in MoinMoin 1.5.x through 1.7.x, 1.8.x
+before 1.8.7, and 1.9.x before 1.9.2 has unknown impact and attack
+vectors, related to configurations that have a non-empty superuser
+list, the xmlrpc action enabled, the SyncPages action enabled, or
+OpenID configured.
+
+Name:CVE-2010-0669
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0669
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0669
+ MLIST:[oss-security] 20100215 CVE Request -- MoinMoin -- 1.8.7
+ URL:http://www.openwall.com/lists/oss-security/2010/02/15/2
+ MLIST:[oss-security] 20100215 Re: CVE Request -- MoinMoin -- 1.8.7
+ URL:http://www.openwall.com/lists/oss-security/2010/02/15/4
+ MLIST:[oss-security] 20100221 Re: CVE Request -- MoinMoin -- 1.8.7
+ URL:http://www.openwall.com/lists/oss-security/2010/02/21/2
+ CONFIRM:http://hg.moinmo.in/moin/1.8/raw-file/1.8.7/docs/CHANGES
+ CONFIRM:http://moinmo.in/MoinMoinRelease1.8
+ CONFIRM:http://moinmo.in/SecurityFixes
+ DEBIAN:DSA-2014
+ URL:http://www.debian.org/security/2010/dsa-2014
+ BID:38023
+ URL:http://www.securityfocus.com/bid/38023
+ SECUNIA:38444
+ URL:http://secunia.com/advisories/38444
+ SECUNIA:38903
+ URL:http://secunia.com/advisories/38903
+ VUPEN:ADV-2010-0600
+ URL:http://www.vupen.com/english/advisories/2010/0600
+Description: MoinMoin before 1.8.7 and 1.9.x before 1.9.2 does not properly
+sanitize user profiles, which has unspecified impact and attack
+vectors.
+
+Name:CVE-2010-0670
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0670
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0670
+ CONFIRM:http://www.iptechinside.com/labs/news/show/6
+ XF:jquarks-unspecified-path-disclosure(56523)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56523
+Description: Unspecified vulnerability in the IP-Tech JQuarks (com_jquarks)
+Component before 0.2.4 for Joomla! allows attackers to obtain the
+installation path for Joomla! via unknown vectors.
+
+Name:CVE-2010-0671
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0671
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0671
+ BUGTRAQ:20100216 Pogodny CMS SQL vulnerabilities
+ URL:http://www.securityfocus.com/archive/1/archive/1/509554/100/0/threaded
+ MISC:http://ariko-security.com/feb2010/ad439.html
+ MISC:http://packetstormsecurity.org/1002-exploits/pogodnycms-sql.txt
+ EXPLOIT-DB:11473
+ URL:http://www.exploit-db.com/exploits/11473
+ BID:38253
+ URL:http://www.securityfocus.com/bid/38253
+ OSVDB:62343
+ URL:http://www.osvdb.org/62343
+ SECUNIA:38571
+ URL:http://secunia.com/advisories/38571
+Description: SQL injection vulnerability in index.php in KR MEDIA Pogodny CMS
+allows remote attackers to execute arbitrary SQL commands via the id
+parameter in a niusy action.
+
+Name:CVE-2010-0672
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0672
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0672
+ MISC:http://packetstormsecurity.org/1002-exploits/wsnguest102-sql.txt
+ EXPLOIT-DB:11436
+ URL:http://www.exploit-db.com/exploits/11436
+ BID:38236
+ URL:http://www.securityfocus.com/bid/38236
+ XF:wsnguest-orderlinks-sql-injection(56256)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56256
+Description: SQL injection vulnerability in index.php in WSN Guest 1.02 allows
+remote attackers to execute arbitrary SQL commands via the orderlinks
+parameter.
+
+Name:CVE-2010-0673
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0673
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0673
+ MISC:http://packetstormsecurity.org/1002-exploits/wpcopperleaf-sql.txt
+ EXPLOIT-DB:11458
+ URL:http://www.exploit-db.com/exploits/11458
+ BID:38239
+ URL:http://www.securityfocus.com/bid/38239
+ OSVDB:62346
+ URL:http://osvdb.org/62346
+ SECUNIA:38579
+ URL:http://secunia.com/advisories/38579
+Description: SQL injection vulnerability in cplphoto.php in the Copperleaf Photolog
+plugin 0.16, and possibly earlier, for WordPress allows remote
+attackers to execute arbitrary SQL commands via the postid parameter.
+
+Name:CVE-2010-0674
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0674
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0674
+ MISC:http://packetstormsecurity.org/1002-exploits/statcountex-disclose.txt
+ EXPLOIT-DB:11434
+ URL:http://www.exploit-db.com/exploits/11434
+ XF:statcountex-stats-info-disclosure(56264)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56264
+Description: StatCounteX 3.1 stores sensitive information under the web root with
+insufficient access control, which allows remote attackers to download
+a database via a direct request for path/stats.mdb.
+
+Name:CVE-2010-0675
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0675
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0675
+ MISC:http://packetstormsecurity.org/1002-exploits/bgscms-xss.txt
+ BID:38264
+ URL:http://www.securityfocus.com/bid/38264
+ OSVDB:62363
+ URL:http://osvdb.org/62363
+ SECUNIA:38597
+ URL:http://secunia.com/advisories/38597
+Description: Cross-site scripting (XSS) vulnerability in index.php in BGSvetionik
+BGS CMS 2.2.1 allows remote attackers to inject arbitrary web script
+or HTML via the search parameter in a search action.  NOTE: some of
+these details are obtained from third party information.
+
+Name:CVE-2010-0676
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0676
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0676
+ MISC:http://packetstormsecurity.org/1002-exploits/joomlarwcards-lfi.txt
+ BID:38267
+ URL:http://www.securityfocus.com/bid/38267
+ SECUNIA:38638
+ URL:http://secunia.com/advisories/38638
+Description: Directory traversal vulnerability in index.php in the RWCards
+(com_rwcards) component 3.0.18 for Joomla! allows remote attackers to
+read arbitrary files via a .. (dot dot) in the controller parameter.
+
+Name:CVE-2010-0677
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0677
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0677
+ MISC:http://packetstormsecurity.org/1002-exploits/katalog-rfisql.txt
+ EXPLOIT-DB:11452
+ URL:http://www.exploit-db.com/exploits/11452
+ OSVDB:62339
+ URL:http://osvdb.org/62339
+ SECUNIA:38581
+ URL:http://secunia.com/advisories/38581
+Description: SQL injection vulnerability in index.php in Katalog Stron Hurricane
+1.3.5, and possibly earlier, allows remote attackers to execute
+arbitrary SQL commands via the get parameter.
+
+Name:CVE-2010-0678
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0678
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0678
+ MISC:http://packetstormsecurity.org/1002-exploits/katalog-rfisql.txt
+ EXPLOIT-DB:11452
+ URL:http://www.exploit-db.com/exploits/11452
+ OSVDB:62340
+ URL:http://osvdb.org/62340
+ SECUNIA:38581
+ URL:http://secunia.com/advisories/38581
+Description: PHP remote file inclusion vulnerability in includes/moderation.php in
+Katalog Stron Hurricane 1.3.5, and possibly earlier, when
+register_globals is enabled, allows remote attackers to execute
+arbitrary PHP code via a URL in the includes_directory parameter.
+
+Name:CVE-2010-0679
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0679
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0679
+ MISC:http://packetstormsecurity.org/1002-advisories/chemviewx-overflow.txt
+ MISC:http://packetstormsecurity.org/1002-exploits/hyleoschemview-heap.rb.txt
+ EXPLOIT-DB:11422
+ URL:http://www.exploit-db.com/exploits/11422
+ MISC:http://www.security-assessment.com/files/advisories/2010-02-11_ChemviewX_Activex.pdf
+ BID:38225
+ URL:http://www.securityfocus.com/bid/38225
+ OSVDB:62276
+ URL:http://osvdb.org/62276
+ SECUNIA:38523
+ URL:http://secunia.com/advisories/38523
+Description: Multiple stack-based buffer overflows in the HyleosChemView.HLChemView
+ActiveX control (HyleosChemView.ocx) in Hyleos ChemView 1.9.5.1 allow
+remote attackers to execute arbitrary code via a large number of white
+space characters in the filename argument to the (1) SaveasMolFile and
+(2) ReadMolFile methods.
+
+Name:CVE-2010-0680
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0680
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0680
+ EXPLOIT-DB:11437
+ URL:http://www.exploit-db.com/exploits/11437
+ BID:38237
+ URL:http://www.securityfocus.com/bid/38237
+Description: Directory traversal vulnerability in index.php in ZeusCMS 0.2 allows
+remote attackers to include and execute arbitrary local files via
+directory traversal sequences in the page parameter.
+
+Name:CVE-2010-0681
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0681
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0681
+ EXPLOIT-DB:11437
+ URL:http://www.exploit-db.com/exploits/11437
+Description: ZeusCMS 0.2 stores sensitive information under the web root with
+insufficient access control, which allows remote attackers to obtain
+sensitive information via a direct request for admin/backup.sql.
+
+Name:CVE-2010-0682
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0682
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0682
+ MISC:http://hakre.wordpress.com/2010/02/16/the-short-memory-of-wordpress-org-security/
+ MISC:http://tmacuk.co.uk/?p=180
+ CONFIRM:http://wordpress.org/development/2010/02/wordpress-2-9-2/
+ CONFIRM:https://core.trac.wordpress.org/ticket/11236
+ FEDORA:FEDORA-2010-19329
+ URL:http://lists.fedoraproject.org/pipermail/package-announce/2011-January/052932.html
+ FEDORA:FEDORA-2010-19330
+ URL:http://lists.fedoraproject.org/pipermail/package-announce/2011-January/052917.html
+ OSVDB:62330
+ URL:http://www.osvdb.org/62330
+ SECUNIA:38592
+ URL:http://secunia.com/advisories/38592
+ SECUNIA:42871
+ URL:http://secunia.com/advisories/42871
+Description: WordPress 2.9 before 2.9.2 allows remote authenticated users to read
+trash posts from other authors via a direct request with a modified p
+parameter.
+
+Name:CVE-2010-0683
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0683
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0683
+ CONFIRM:http://www.tibco.com/multimedia/security_advisory_administrator_tcm8-10685.txt
+ CONFIRM:http://www.tibco.com/services/support/advisories/adminstrator-advisory_20100223.jsp
+ BID:38396
+ URL:http://www.securityfocus.com/bid/38396
+ SECUNIA:38732
+ URL:http://secunia.com/advisories/38732
+ VUPEN:ADV-2010-0463
+ URL:http://www.vupen.com/english/advisories/2010/0463
+Description: Unspecified vulnerability in TIBRepoServer5.jar in TIBCO Administrator
+5.4.0 through 5.6.0, when JMS transport is used, allows remote
+authenticated users to execute arbitrary code on all domain nodes via
+vectors related to leveraging administrative credentials.
+
+Name:CVE-2010-0684
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0684
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0684
+ BUGTRAQ:20100330 CVE-2010-0684: Apache ActiveMQ Persistent Cross-Site Scripting (XSS) Vulnerability
+ URL:http://www.securityfocus.com/archive/1/archive/1/510419/100/0/threaded
+ MISC:http://www.rajatswarup.com/CVE-2010-0684.txt
+ CONFIRM:http://activemq.apache.org/activemq-531-release.html
+ CONFIRM:https://issues.apache.org/activemq/browse/AMQ-2613
+ CONFIRM:https://issues.apache.org/activemq/browse/AMQ-2625
+ BID:39119
+ URL:http://www.securityfocus.com/bid/39119
+ SECTRACK:1023778
+ URL:http://securitytracker.com/id?1023778
+ SECUNIA:39223
+ URL:http://secunia.com/advisories/39223
+ XF:activemq-createdestination-xss(57397)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/57397
+Description: Cross-site scripting (XSS) vulnerability in createDestination.action
+in Apache ActiveMQ before 5.3.1 allows remote authenticated users to
+inject arbitrary web script or HTML via the JMSDestination parameter
+in a queue action.
+
+Name:CVE-2010-0685
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0685
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0685
+ BUGTRAQ:20100218 AST-2010-002: Dialplan injection vulnerability
+ URL:http://www.securityfocus.com/archive/1/archive/1/509608/100/0/threaded
+ MISC:http://svn.asterisk.org/svn/asterisk/branches/1.2/README-SERIOUSLY.bestpractices.txt
+ CONFIRM:http://downloads.digium.com/pub/security/AST-2010-002.html
+ FEDORA:FEDORA-2010-3724
+ URL:http://lists.fedoraproject.org/pipermail/package-announce/2010-March/037679.html
+ SECTRACK:1023637
+ URL:http://www.securitytracker.com/id?1023637
+ SECUNIA:38641
+ URL:http://secunia.com/advisories/38641
+ SECUNIA:39096
+ URL:http://secunia.com/advisories/39096
+ VUPEN:ADV-2010-0439
+ URL:http://www.vupen.com/english/advisories/2010/0439
+ XF:asterisk-dial-weak-security(56397)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56397
+Description: The design of the dialplan functionality in Asterisk Open Source
+1.2.x, 1.4.x, and 1.6.x; and Asterisk Business Edition B.x.x and
+C.x.x, when using the ${EXTEN} channel variable and wildcard pattern
+matches, allows context-dependent attackers to inject strings into the
+dialplan using metacharacters that are injected when the variable is
+expanded, as demonstrated using the Dial application to process a
+crafted SIP INVITE message that adds an unintended outgoing channel
+leg.  NOTE: it could be argued that this is not a vulnerability in
+Asterisk, but a class of vulnerabilities that can occur in any program
+that uses this feature without the associated filtering functionality
+that is already available.
+
+Name:CVE-2010-0686
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0686
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0686
+ MLIST:[security-announce] 20100329 VMSA-2010-0005 VMware products address vulnerabilities in WebAccess
+ URL:http://lists.vmware.com/pipermail/security-announce/2010/000086.html
+ CONFIRM:http://www.vmware.com/security/advisories/VMSA-2010-0005.html
+ BID:39037
+ URL:http://www.securityfocus.com/bid/39037
+ SECTRACK:1023769
+ URL:http://www.securitytracker.com/id?1023769
+Description: WebAccess in VMware VirtualCenter 2.0.2 and 2.5, VMware Server 2.0,
+and VMware ESX 3.0.3 and 3.5 allows remote attackers to leverage
+proxy-server functionality to spoof the origin of requests via
+unspecified vectors, related to a "URL forwarding vulnerability."
+
+Name:CVE-2010-0687
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0687
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0687
+
+Name:CVE-2010-0688
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0688
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0688
+ EXPLOIT-DB:13940
+ URL:http://www.exploit-db.com/exploits/13940
+ MISC:http://www.corelan.be:8800/index.php/forum/security-advisories/corelan-10-011-orbital-viewer-orb-buffer-overflow/
+ BID:38436
+ URL:http://www.securityfocus.com/bid/38436
+ BID:40985
+ URL:http://www.securityfocus.com/bid/40985
+ OSVDB:62580
+ URL:http://www.osvdb.org/62580
+ SECUNIA:38720
+ URL:http://secunia.com/advisories/38720
+ VUPEN:ADV-2010-0478
+ URL:http://www.vupen.com/english/advisories/2010/0478
+ XF:orbitalviewer-ov-bo(59560)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/59560
+Description: Stack-based buffer overflow in Orbital Viewer 1.04 allows
+user-assisted remote attackers to execute arbitrary code via a crafted
+(1) .orb or (2) .ov file.
+
+Name:CVE-2010-0689
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0689
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0689
+ BUGTRAQ:20100225 NSOADV-2010-003: DATEV ActiveX Control remote command execution
+ URL:http://www.securityfocus.com/archive/1/archive/1/509743/100/0/threaded
+ MISC:http://sotiriu.de/adv/NSOADV-2010-003.txt
+ MISC:http://sotiriu.de/demos/videos/nso-2010-003.html
+ CONFIRM:http://www.datev.de/info-db/1080162
+ BID:38415
+ URL:http://www.securityfocus.com/bid/38415
+ OSVDB:62564
+ URL:http://osvdb.org/62564
+ SECUNIA:38716
+ URL:http://secunia.com/advisories/38716
+ VUPEN:ADV-2010-0474
+ URL:http://www.vupen.com/english/advisories/2010/0474
+ XF:datev-dvbsexecall-command-execution(56530)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56530
+Description: The ExecuteExe method in the DVBSExeCall Control ActiveX control
+1.0.0.1 in DVBSExeCall.ocx in DATEV Base System (aka Grundpaket Basis)
+allows remote attackers to execute arbitrary commands via unspecified
+vectors.
+
+Name:CVE-2010-0690
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0690
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0690
+ MISC:http://packetstormsecurity.org/1002-exploits/videogamesrental-sql.txt
+ EXPLOIT-DB:11409
+ URL:http://www.exploit-db.com/exploits/11409
+ OSVDB:62295
+ URL:http://osvdb.org/62295
+ SECUNIA:38555
+ URL:http://secunia.com/advisories/38555
+ XF:videogames-index-sql-injection(56226)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56226
+Description: SQL injection vulnerability in index.php in CommodityRentals Video
+Games Rentals allows remote attackers to execute arbitrary SQL
+commands via the pfid parameter in a catalog action.
+
+Name:CVE-2010-0691
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0691
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0691
+ EXPLOIT-DB:11445
+ URL:http://www.exploit-db.com/exploits/11445
+ OSVDB:62329
+ URL:http://osvdb.org/62329
+ SECUNIA:38588
+ URL:http://secunia.com/advisories/38588
+Description: SQL injection vulnerability in druckansicht.php in JTL-Shop 2 allows
+remote attackers to execute arbitrary SQL commands via the s
+parameter.
+
+Name:CVE-2010-0692
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0692
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0692
+ CONFIRM:http://www.iptechinside.com/labs/news/show/6
+ BID:38203
+ URL:http://www.securityfocus.com/bid/38203
+ OSVDB:62332
+ URL:http://www.osvdb.org/62332
+ SECUNIA:38623
+ URL:http://secunia.com/advisories/38623
+Description: SQL injection vulnerability in the IP-Tech JQuarks (com_jquarks)
+Component 0.2.3, and possibly earlier, for Joomla! allows remote
+attackers to execute arbitrary SQL commands via the id parameter to
+index.php.  NOTE: some of these details are obtained from third party
+information.
+
+Name:CVE-2010-0693
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0693
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0693
+ MISC:http://packetstormsecurity.org/1002-exploits/trademanager-sql.txt
+ EXPLOIT-DB:11412
+ URL:http://www.exploit-db.com/exploits/11412
+ OSVDB:62294
+ URL:http://osvdb.org/62294
+ SECUNIA:38556
+ URL:http://secunia.com/advisories/38556
+ XF:trade-manager-products-sql-injection(56223)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56223
+Description: SQL injection vulnerability in products.php in CommodityRentals Trade
+Manager Script allows remote attackers to execute arbitrary SQL
+commands via the cid parameter.
+
+Name:CVE-2010-0694
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0694
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0694
+ MISC:http://docs.joomla.org/Vulnerable_Extensions_List#New_format_Feed_Starts_Here
+ MISC:http://packetstormsecurity.org/1001-exploits/joomlaperchagallery-sql.txt
+ EXPLOIT-DB:11024
+ URL:http://www.exploit-db.com/exploits/11024
+ BID:37642
+ URL:http://www.securityfocus.com/bid/37642
+ XF:perchagallery-index-sql-injection(55447)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/55447
+Description: SQL injection vulnerability in the PerchaGallery (com_perchagallery)
+component before 1.5b for Joomla! allows remote attackers to execute
+arbitrary SQL commands via the id parameter in an editunidad action to
+index.php.
+
+Name:CVE-2010-0695
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0695
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0695
+ MISC:http://packetstormsecurity.org/1002-exploits/basiccms-sqlxss.txt
+ BID:38235
+ URL:http://www.securityfocus.com/bid/38235
+Description: Cross-site scripting (XSS) vulnerability in pages/index.php in
+BASIC-CMS allows remote attackers to inject arbitrary web script or
+HTML via the nav_id parameter.
+
+Name:CVE-2010-0696
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0696
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0696
+ EXPLOIT-DB:11447
+ URL:http://www.exploit-db.com/exploits/11447
+ CONFIRM:http://www.joomlaworks.gr/content/view/77/34/
+ BID:38238
+ URL:http://www.securityfocus.com/bid/38238
+ OSVDB:62331
+ URL:http://osvdb.org/62331
+ SECUNIA:38587
+ URL:http://secunia.com/advisories/38587
+Description: Directory traversal vulnerability in includes/download.php in the
+JoomlaWorks AllVideos (Jw_allVideos) plugin 3.0 through 3.2 for
+Joomla! allows remote attackers to read arbitrary files via a
+./../.../ (modified dot dot) in the file parameter.
+
+Name:CVE-2010-0697
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0697
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0697
+ CONFIRM:http://drupal.org/node/711072
+ CONFIRM:http://drupal.org/node/711074
+ CONFIRM:http://drupal.org/node/717214
+ BID:38292
+ URL:http://www.securityfocus.com/bid/38292
+ OSVDB:62405
+ URL:http://osvdb.org/62405
+ SECUNIA:38633
+ URL:http://secunia.com/advisories/38633
+ XF:itweakupload-filenames-xss(56351)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56351
+Description: Cross-site scripting (XSS) vulnerability in the iTweak Upload module
+6.x-1.x before 6.x-1.2 and 6.x-2.x before 6.x-2.3 for Drupal allows
+remote authenticated users, with create content and upload file
+permissions, to inject arbitrary web script or HTML via the file name
+of an uploaded file.
+
+Name:CVE-2010-0698
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0698
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0698
+ MISC:http://packetstormsecurity.org/1002-exploits/wsccms-sql.txt
+ EXPLOIT-DB:11507
+ URL:http://www.exploit-db.com/exploits/11507
+ BID:38335
+ URL:http://www.securityfocus.com/bid/38335
+ SECUNIA:38698
+ URL:http://secunia.com/advisories/38698
+ XF:wsccms-login-sql-injection(56406)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56406
+Description: SQL injection vulnerability in backoffice/login.asp in Dynamicsoft WSC
+CMS 2.2 allows remote attackers to execute arbitrary SQL commands via
+the Password parameter.  NOTE: some of these details are obtained from
+third party information.
+
+Name:CVE-2010-0699
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0699
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0699
+ MISC:http://packetstormsecurity.org/1002-exploits/vss-xss.txt
+ SECUNIA:38701
+ URL:http://secunia.com/advisories/38701
+Description: Cross-site scripting (XSS) vulnerability in index.php in
+VideoSearchScript Pro 3.5 allows remote attackers to inject arbitrary
+web script or HTML via the q parameter.
+
+Name:CVE-2010-0700
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0700
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0700
+ MISC:http://zeroscience.mk/codes/wamp_xss.txt
+ MISC:http://zeroscience.mk/en/vulnerabilities/ZSL-2010-4926.php
+ BID:38357
+ URL:http://www.securityfocus.com/bid/38357
+ OSVDB:62481
+ URL:http://osvdb.org/62481
+ SECUNIA:38706
+ URL:http://secunia.com/advisories/38706
+ XF:wampserver-index-xss(56417)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56417
+Description: Cross-site scripting (XSS) vulnerability in index.php in WampServer
+2.0i allows remote attackers to inject arbitrary web script or HTML
+via the lang parameter.
+
+Name:CVE-2010-0701
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0701
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0701
+ MISC:http://packetstormsecurity.org/1002-exploits/omnidocs-sql.txt
+ EXPLOIT-DB:11393
+ URL:http://www.exploit-db.com/exploits/11393
+ BID:38304
+ URL:http://www.securityfocus.com/bid/38304
+ OSVDB:62403
+ URL:http://osvdb.org/62403
+ SECUNIA:38527
+ URL:http://secunia.com/advisories/38527
+ XF:omnidocs-forcechangepassword-sql-injection(56237)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56237
+Description: SQL injection vulnerability in ForceChangePassword.jsp in Newgen
+Software OmniDocs allows remote attackers to execute arbitrary SQL
+commands via unspecified vectors.
+
+Name:CVE-2010-0702
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0702
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0702
+ MISC:http://packetstormsecurity.org/1002-exploits/tribox-sql.txt
+ EXPLOIT-DB:11508
+ URL:http://www.exploit-db.com/exploits/11508
+ BID:38323
+ URL:http://www.securityfocus.com/bid/38323
+ XF:trixbox-phonedirectory-sql-injection(56407)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56407
+Description: SQL injection vulnerability in cisco/services/PhonecDirectory.php in
+Fonality Trixbox 2.2.4 allows remote attackers to execute arbitrary
+SQL commands via the ID parameter.
+
+Name:CVE-2010-0703
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0703
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0703
+ BUGTRAQ:20100217 Cross-Site Scriting on Portwise SSL VPN v4.6
+ URL:http://www.securityfocus.com/archive/1/archive/1/509584/100/0/threaded
+ MISC:http://packetstormsecurity.org/1002-exploits/PR09-04.txt
+ MISC:http://www.procheckup.com/vulnerability_manager/vulnerabilities/pr09-04
+ BID:38308
+ URL:http://www.securityfocus.com/bid/38308
+ OSVDB:62482
+ URL:http://osvdb.org/62482
+ SECUNIA:38627
+ URL:http://secunia.com/advisories/38627
+ XF:portwise-reloadframe-xss(56420)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56420
+Description: Cross-site scripting (XSS) vulnerability in wa/auth in PortWise SSL
+VPN 4.6 allows remote attackers to inject arbitrary web script or HTML
+via the reloadFrame parameter.
+
+Name:CVE-2010-0704
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0704
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0704
+ AIXAPAR:PM05829
+ URL:http://www-01.ibm.com/support/docview.wss?uid=swg1PM05829
+ SECUNIA:38574
+ URL:http://secunia.com/advisories/38574
+Description: Cross-site scripting (XSS) vulnerability in the Portlet Palette in IBM
+WebSphere Portal 6.0.1.5 wp6015_008_01 allows remote attackers to
+inject arbitrary web script or HTML via the search field.
+
+Name:CVE-2010-0705
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0705
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0705
+ BUGTRAQ:20100223 [TKADV2010-003] avast! 4.8 and 5.0 aavmker4.sys Kernel Memory Corruption
+ URL:http://www.securityfocus.com/archive/1/archive/1/509710/100/0/threaded
+ MISC:http://www.trapkit.de/advisories/TKADV2010-003.txt
+ CONFIRM:http://forum.avast.com/index.php?topic=55484.0
+ BID:38363
+ URL:http://www.securityfocus.com/bid/38363
+ OSVDB:62510
+ URL:http://osvdb.org/62510
+ SECTRACK:1023644
+ URL:http://www.securitytracker.com/id?1023644
+ SECUNIA:38677
+ URL:http://secunia.com/advisories/38677
+ SECUNIA:38689
+ URL:http://secunia.com/advisories/38689
+ VUPEN:ADV-2010-0449
+ URL:http://www.vupen.com/english/advisories/2010/0449
+Description: Aavmker4.sys in avast! 4.8 through 4.8.1368.0 and 5.0 before 5.0.418.0
+running on Windows 2000 and XP does not properly validate input to
+IOCTL 0xb2d60030, which allows local users to cause a denial of
+service (system crash) or execute arbitrary code to gain privileges
+via IOCTL requests using crafted kernel addresses that trigger memory
+corruption.
+
+Name:CVE-2010-0706
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0706
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0706
+ MISC:http://www.packetstormsecurity.org/1002-exploits/nikara-xss.txt
+ BID:38311
+ URL:http://www.securityfocus.com/bid/38311
+ SECUNIA:38564
+ URL:http://secunia.com/advisories/38564
+ XF:nfms-message-xss(56393)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56393
+Description: Cross-site scripting (XSS) vulnerability in the login/prompt component
+in Subex Nikira Fraud Management System allows remote attackers to
+inject arbitrary web script or HTML via the message parameter.
+
+Name:CVE-2010-0707
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0707
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0707
+ EXPLOIT-DB:11516
+ URL:http://www.exploit-db.com/exploits/11516
+ OSVDB:62478
+ URL:http://osvdb.org/62478
+ SECUNIA:38662
+ URL:http://secunia.com/advisories/38662
+ XF:timeclock-adduser-csrf(56410)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56410
+Description: Cross-site request forgery (CSRF) vulnerability in add_user.php in
+Employee Timeclock Software 0.99 allows remote attackers to hijack the
+authentication of an administrator for requests that create new
+administrative users.  NOTE: some of these details are obtained from
+third party information.
+
+Name:CVE-2010-0708
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0708
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0708
+ CONFIRM:http://sunsolve.sun.com/search/document.do?assetkey=1-21-143884-01-1
+ SUNALERT:275711
+ URL:http://sunsolve.sun.com/search/document.do?assetkey=1-26-275711-1
+ SUNALERT:1021788
+ URL:http://sunsolve.sun.com/search/document.do?assetkey=1-77-1021788.1-1
+ XF:jsds-nsslapd-slapd-dos(56603)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56603
+Description: Multiple unspecified vulnerabilities in (1) ns-slapd and (2) slapd.exe
+in Sun Directory Server Enterprise Edition 7.0, Sun Java System
+Directory Server 5.2, and Sun Java System Directory Server Enterprise
+Edition 6.0 through 6.3.1 allow remote attackers to cause a denial of
+service (daemon crash) via a crafted LDAP search request.
+
+Name:CVE-2010-0709
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0709
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0709
+ EXPLOIT-DB:11477
+ URL:http://www.exploit-db.com/exploits/11477
+ EXPLOIT-DB:11478
+ URL:http://www.exploit-db.com/exploits/11478
+ CONFIRM:http://www.limny.org/
+ OSVDB:62389
+ URL:http://osvdb.org/62389
+ SECUNIA:38616
+ URL:http://secunia.com/advisories/38616
+ XF:limny-admin-csrf(56318)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56318
+Description: Multiple cross-site request forgery (CSRF) vulnerabilities in Limny
+2.0 allow remote attackers to (1) hijack the authentication of users
+or administrators for requests that change the email address or
+password via the user action to index.php, and (2) hijack the
+authentication of the administrator for requests that create a new
+user via the admin/modules/user/new action to limny/index.php.
+
+Name:CVE-2010-0710
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0710
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0710
+ OSVDB:62358
+ URL:http://osvdb.org/62358
+ SECUNIA:38596
+ URL:http://secunia.com/advisories/38596
+Description: SQL injection vulnerability in default.asp in ASPCode CMS 1.5.8, 2.0.0
+Build 103, and possibly other versions, allows remote attackers to
+execute arbitrary SQL commands via the newsid parameter when the sec
+parameter is 26.  NOTE: the provenance of this information is unknown;
+the details are obtained solely from third party information.
+
+Name:CVE-2010-0711
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0711
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0711
+ MISC:http://packetstormsecurity.org/1002-exploits/aspcodecms-xssxsrf.txt
+ OSVDB:62357
+ URL:http://osvdb.org/62357
+ SECUNIA:38596
+ URL:http://secunia.com/advisories/38596
+Description: Cross-site request forgery (CSRF) vulnerability in default.asp in
+ASPCode CMS 1.5.8, 2.0.0 Build 103, and possibly other versions,
+allows remote attackers to hijack the authentication of an
+administrator for requests that (1) delete users via the delete action
+in the ma2 parameter or (2) create administrators via the update
+action in the ma2 parameter.
+
+Name:CVE-2010-0712
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0712
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0712
+ MISC:http://dev.zenoss.org/trac/changeset/15257
+ MISC:http://www.ngenuity.org/wordpress/2010/01/14/ngenuity-2010-001-zenoss-getjsoneventsinfo-sql-injection/
+ CONFIRM:http://www.zenoss.com/news/SQL-Injection-and-Cross-Site-Forgery-in-Zenoss-Core-Corrected.html
+ BID:37802
+ URL:http://www.securityfocus.com/bid/37802
+ OSVDB:61804
+ URL:http://osvdb.org/61804
+ SECUNIA:38195
+ URL:http://secunia.com/advisories/38195
+ XF:zenoss-getjsoneventsinfo-sql-injection(55670)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/55670
+Description: Multiple SQL injection vulnerabilities in
+zport/dmd/Events/getJSONEventsInfo in Zenoss 2.3.3, and other versions
+before 2.5, allow remote authenticated users to execute arbitrary SQL
+commands via the (1) severity, (2) state, (3) filter, (4) offset, and
+(5) count parameters.
+
+Name:CVE-2010-0713
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0713
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0713
+ BUGTRAQ:20100116 Zenoss Multiple Admin CSRF
+ URL:http://www.securityfocus.com/archive/1/archive/1/508982/100/0/threaded
+ MISC:http://www.ngenuity.org/wordpress/2010/01/14/ngenuity-2010-002-zenoss-multiple-admin-csrf/
+ CONFIRM:http://www.zenoss.com/news/SQL-Injection-and-Cross-Site-Forgery-in-Zenoss-Core-Corrected.html
+ BID:37843
+ URL:http://www.securityfocus.com/bid/37843
+ OSVDB:61805
+ URL:http://osvdb.org/61805
+ SECUNIA:38195
+ URL:http://secunia.com/advisories/38195
+Description: Multiple cross-site request forgery (CSRF) vulnerabilities in Zenoss
+2.3.3, and other versions before 2.5, allow remote attackers to hijack
+the authentication of an administrator for (1) requests that reset
+user passwords via zport/dmd/ZenUsers/admin, and (2) requests that
+change user commands, which allows for remote execution of system
+commands via zport/dmd/userCommands/.
+
+Name:CVE-2010-0714
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0714
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0714
+ BUGTRAQ:20100225 Hacktics Advisory Feb10: XSS in IBM WebSphere Portal & Lotus WCM
+ URL:http://www.securityfocus.com/archive/1/archive/1/509744/100/0/threaded
+ MISC:http://www.hacktics.com/content/advisories/AdvIBM20100224.html
+ CONFIRM:http://www-01.ibm.com/support/docview.wss?uid=swg21421469
+ AIXAPAR:PM03233
+ URL:http://www-1.ibm.com/support/docview.wss?uid=swg1PM03233
+ BID:38412
+ URL:http://www.securityfocus.com/bid/38412
+ SECTRACK:1023660
+ URL:http://www.securitytracker.com/id?1023660
+ XF:ibm-login-xss(56508)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56508
+Description: Cross-site scripting (XSS) vulnerability in login.jsp in IBM WebSphere
+Portal, IBM Lotus Web Content Management (WCM), and IBM Lotus
+Workplace Web Content Management 5.1.0.0 through 5.1.0.5, 6.0.0.0
+through 6.0.0.4, 6.0.1.0 through 6.0.1.7, 6.1.0.0 through 6.1.0.3, and
+6.1.5.0; and IBM Lotus Quickr services 8.0, 8.0.0.2, 8.1, 8.1.1, and
+8.1.1.1 for WebSphere Portal; allows remote attackers to inject
+arbitrary web script or HTML via the query string.
+
+Name:CVE-2010-0715
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0715
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0715
+ BUGTRAQ:20100225 Hacktics Advisory Feb10: XSS in IBM WebSphere Portal & Lotus WCM
+ URL:http://www.securityfocus.com/archive/1/archive/1/509744/100/0/threaded
+ MISC:http://www-01.ibm.com/support/docview.wss?uid=swg21421469
+ MISC:http://www.hacktics.com/content/advisories/AdvIBM20100224.html
+ XF:ibm-login-phishing(56602)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56602
+Description: Open redirect vulnerability in login.jsp in IBM WebSphere Portal, IBM
+Lotus Web Content Management (WCM), and IBM Lotus Workplace Web
+Content Management 5.1.0.0 through 5.1.0.5, 6.0.0.0 through 6.0.0.4,
+6.0.1.0 through 6.0.1.7, 6.1.0.0 through 6.1.0.3, and 6.1.5.0; and IBM
+Lotus Quickr services 8.0, 8.0.0.2, 8.1, 8.1.1, and 8.1.1.1 for
+WebSphere Portal; allows remote attackers to redirect users to
+arbitrary web sites and conduct phishing attacks via the query string.
+
+Name:CVE-2010-0716
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0716
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0716
+ BUGTRAQ:20100222 Hacktics Advisory Feb10: Persistent XSS in Microsoft SharePoint Portal
+ URL:http://www.securityfocus.com/archive/1/archive/1/509683/100/0/threaded
+ MISC:http://www.hacktics.com/content/advisories/AdvMS20100222.html
+ XF:sharepoint-aspx-xss(56597)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56597
+Description: _layouts/Upload.aspx in the Documents module in Microsoft SharePoint
+before 2010 uses URLs with the same hostname and port number for a web
+site's primary files and individual users' uploaded files (aka
+attachments), which allows remote authenticated users to leverage
+same-origin relationships and conduct cross-site scripting (XSS)
+attacks by uploading TXT files, a related issue to CVE-2008-5026.
+NOTE: the vendor disputes the significance of this issue, because
+cross-domain isolation can be implemented when needed.
+
+Name:CVE-2010-0717
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0717
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0717
+ MLIST:[oss-security] 20100215 CVE Request -- MoinMoin -- 1.8.7
+ URL:http://www.openwall.com/lists/oss-security/2010/02/15/2
+ CONFIRM:http://hg.moinmo.in/moin/1.8/raw-file/1.8.7/docs/CHANGES
+ CONFIRM:http://moinmo.in/MoinMoinRelease1.8
+ DEBIAN:DSA-2014
+ URL:http://www.debian.org/security/2010/dsa-2014
+ SECUNIA:38903
+ URL:http://secunia.com/advisories/38903
+ VUPEN:ADV-2010-0600
+ URL:http://www.vupen.com/english/advisories/2010/0600
+ XF:moinmoin-cfgpackagepages-unspecified(56595)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56595
+Description: The default configuration of cfg.packagepages_actions_excluded in
+MoinMoin before 1.8.7 does not prevent unsafe package actions, which
+has unspecified impact and attack vectors.
+
+Name:CVE-2010-0718
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0718
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0718
+ EXPLOIT-DB:11531
+ URL:http://www.exploit-db.com/exploits/11531
+ XF:win-mediaplayer-mpg-bo(56435)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56435
+Description: Buffer overflow in Microsoft Windows Media Player 9 and 11.0.5721.5145
+allows remote attackers to cause a denial of service (divide-by-zero
+error and application crash) via a crafted .mpg file.
+
+Name:CVE-2010-0719
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0719
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0719
+ MISC:http://www.scmagazineus.com/malta-researchers-find-windows-bug-that-crashes-pcs/article/164439/
+ OSVDB:62660
+ URL:http://osvdb.org/62660
+ SECTRACK:1023656
+ URL:http://securitytracker.com/id?1023656
+ XF:ms-win-api-dos(56591)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56591
+Description: An unspecified API in Microsoft Windows 2000, Windows XP, Windows
+Server 2003, Windows Vista, Windows Server 2008, and Windows 7 does
+not validate arguments, which allows local users to cause a denial of
+service (system crash) via a crafted application.
+
+Name:CVE-2010-0720
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0720
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0720
+ MISC:http://4004securityproject.wordpress.com/2009/10/21/erotik-auktionshaus-sql-injection-news-php/
+ MISC:http://packetstormsecurity.org/1002-exploits/erotik-sql.txt
+ EXPLOIT-DB:11489
+ URL:http://www.exploit-db.com/exploits/11489
+ OSVDB:62369
+ URL:http://www.osvdb.org/62369
+ SECUNIA:38614
+ URL:http://secunia.com/advisories/38614
+ XF:erotikauktionshaus-news-sql-injection(56330)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56330
+Description: SQL injection vulnerability in news.php in Erotik Auktionshaus allows
+remote attackers to execute arbitrary SQL commands via the id
+parameter.
+
+Name:CVE-2010-0721
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0721
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0721
+ MISC:http://packetstormsecurity.org/1002-exploits/auktionshausgelb-sql.txt
+ EXPLOIT-DB:11488
+ URL:http://www.exploit-db.com/exploits/11488
+ XF:auktionshausgelb-news-sql-injection(56332)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56332
+Description: SQL injection vulnerability in news.php in Auktionshaus Gelb 3.0
+allows remote attackers to execute arbitrary SQL commands via the id
+parameter.
+
+Name:CVE-2010-0722
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0722
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0722
+ MISC:http://4004securityproject.wordpress.com/2010/02/22/php-auktion-pro-sql-injection-news-php/
+ EXPLOIT-DB:11547
+ URL:http://www.exploit-db.com/exploits/11547
+ BID:38371
+ URL:http://www.securityfocus.com/bid/38371
+ SECUNIA:38679
+ URL:http://secunia.com/advisories/38679
+ XF:phpauktionpro-news-sql-injection(56478)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56478
+Description: SQL injection vulnerability in news.php in Php Auktion Pro allows
+remote attackers to execute arbitrary SQL commands via the id
+parameter.
+
+Name:CVE-2010-0723
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0723
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0723
+ MISC:http://4004securityproject.wordpress.com/2010/02/21/ero-auktion-2010-sql-injection-news-php/
+ MISC:http://4004securityproject.wordpress.com/2010/02/21/ero-auktion-v-2-0-sql-injection-news-php/
+ MISC:http://packetstormsecurity.org/1002-exploits/eroauktion20-sql.txt
+ MISC:http://packetstormsecurity.org/1002-exploits/eroauktion2010-sql.txt
+ EXPLOIT-DB:11521
+ URL:http://www.exploit-db.com/exploits/11521
+ EXPLOIT-DB:11522
+ URL:http://www.exploit-db.com/exploits/11522
+ SECUNIA:38666
+ URL:http://secunia.com/advisories/38666
+ XF:eroauktion-news-sql-injection(56446)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/56446
+Description: SQL injection vulnerability in news.php in Ero Auktion 2.0 and 2010
+allows remote attackers to execute arbitrary SQL commands via the id
+parameter.
+
+Name:CVE-2010-0724
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0724
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0724
+ MISC:http://packetstormsecurity.org/1002-exploits/arabcart-sqlxss.txt
+ EXPLOIT-DB:11524
+ URL:http://www.exploit-db.com/exploits/11524
+ BID:38426
+ URL:http://www.securityfocus.com/bid/38426
+ VUPEN:ADV-2010-0443
+ URL:http://www.vupen.com/english/advisories/2010/0443
+Description: SQL injection vulnerability in showimg.php in Arab Cart 1.0.2.0 allows
+remote attackers to execute arbitrary SQL commands via the id
+parameter.
+
+Name:CVE-2010-0725
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0725
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2010-0725
+ MISC:http://packetstormsecurity.org/1002-exploits/arabcart-sqlxss.txt
+ EXPLOIT-DB:11524
+ URL:http://www.exploit-db.com/exploits/11524
+ BID:38426
+ URL:http://www.securityfocus.com/bid/38426
+ VUPEN:ADV-2010-0443
+ URL:http://www.vupen.com/english/advisories/2010/0443
+Description: Cross-site scripting (XSS) vulnerability in showimg.php in Arab Cart
+1.0.2.0 allows remote attackers to inject arbitrary web script or HTML
+via the id parameter.
+

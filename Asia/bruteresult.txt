@@ -1,0 +1,224 @@
+Name:CVE-1999-1074
+Status: Entry
+Reference: 
+URL(Common Vulnerable and Exposures):http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-1074
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-1999-1074
+ BUGTRAQ:19980501 Warning! Webmin Security Advisory
+ URL:http://www.securityfocus.com/archive/1/9138
+ CONFIRM:http://www.webmin.com/webmin/changes.html
+ BID:98
+ URL:http://www.securityfocus.com/bid/98
+Description: Webmin before 0.5 does not restrict the number of invalid passwords
+that are entered for a valid username, which could allow remote
+attackers to gain privileges via brute force password cracking.
+
+Name:CVE-1999-1100
+Status: Entry
+Reference: 
+URL(Common Vulnerable and Exposures):http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-1100
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-1999-1100
+ CISCO:19980616 PIX Private Link Key Processing and Cryptography Issues
+ URL:http://www.cisco.com/warp/public/770/pixkey-pub.shtml
+ CIAC:I-056
+ URL:http://ciac.llnl.gov/ciac/bulletins/i-056.shtml
+ XF:cisco-pix-parse-error(1579)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/1579
+Description: Cisco PIX Private Link 4.1.6 and earlier does not properly process
+certain commands in the configuration file, which reduces the
+effective key length of the DES key to 48 bits instead of 56 bits,
+which makes it easier for an attacker to find the proper key via a
+brute force attack.
+
+Name:CVE-1999-1152
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-1152
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-1999-1152
+ BUGTRAQ:19980603 Compaq/Microcom 6000 DoS + more
+ URL:http://marc.info/?l=bugtraq&m=90296493106214&w=2
+Description: Compaq/Microcom 6000 Access Integrator does not disconnect a client
+after a certain number of failed login attempts, which allows remote
+attackers to guess usernames or passwords via a brute force attack.
+
+Name:CVE-1999-1324
+Status: Entry
+Reference: 
+URL(Common Vulnerable and Exposures):http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-1324
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-1999-1324
+ CIAC:D-06
+ URL:http://ciac.llnl.gov/ciac/bulletins/d-06.shtml
+ XF:openvms-sysgen-enabled(7225)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/7225
+Description: VAXstations running Open VMS 5.3 through 5.5-2 with VMS DECwindows or
+MOTIF do not properly disable access to user accounts that exceed the
+break-in limit threshold for failed login attempts, which makes it
+easier for attackers to conduct brute force password guessing.
+
+Name:CVE-2000-1030
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-1030
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2000-1030
+ BUGTRAQ:20001031 Re: Samba 2.0.7 SWAT vulnerabilities
+ URL:http://www.securityfocus.com/archive/1/142672
+ BID:1888
+ URL:http://www.securityfocus.com/bid/1888
+ XF:corporatetime-brute-force(5529)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/5529
+Description: CS&T CorporateTime for the Web returns different error messages for
+invalid usernames and invalid passwords, which allows remote attackers
+to determine valid usernames on the server.
+
+Name:CVE-2000-1177
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-1177
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2000-1177
+ BUGTRAQ:20001121 Big Brother Advisory - Fate Research Labs
+ URL:http://archives.neohapsis.com/archives/bugtraq/2000-11/0284.html
+ CONFIRM:http://bb4.com/incident.nov21
+ BID:1971
+ URL:http://www.securityfocus.com/bid/1971
+Description: bb-hist.sh, bb-histlog.sh, bb-hostsvc.sh, bb-rep.sh, bb-replog.sh, and
+bb-ack.sh in Big Brother (BB) before 1.5d3 allows remote attackers to
+determine the existence of files and user ID's by specifying the
+target file in the HISTFILE parameter.
+
+Name:CVE-2001-0395
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0395
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2001-0395
+ BUGTRAQ:20010410 Console 3200 telnetd problem.
+ URL:http://archives.neohapsis.com/archives/bugtraq/2001-04/0170.html
+ BID:2578
+ URL:http://www.securityfocus.com/bid/2578
+Description: Lightwave ConsoleServer 3200 does not disconnect users after
+unsuccessful login attempts, which could allow remote attackers to
+conduct brute force password guessing.
+
+Name:CVE-2001-0396
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0396
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2001-0396
+ BUGTRAQ:20010410 Console 3200 telnetd problem.
+ URL:http://archives.neohapsis.com/archives/bugtraq/2001-04/0170.html
+ BID:2578
+ URL:http://www.securityfocus.com/bid/2578
+Description: The pre-login mode in the System Administrator interface of Lightwave
+ConsoleServer 3200 allows remote attackers to obtain sensitive
+information such as system status, configuration, and users.
+
+Name:CVE-2001-0851
+Status: Entry
+Reference: 
+URL(Common Vulnerable and Exposures):http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0851
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2001-0851
+ ENGARDE:ESA-20011106-01
+ URL:http://www.linuxsecurity.com/advisories/other_advisory-1683.html
+ CALDERA:CSSA-2001-38.0
+ URL:http://www.caldera.com/support/security/advisories/CSSA-2001-038.0.txt
+ SUSE:SuSE-SA:2001:039
+ URL:http://www.novell.com/linux/security/advisories/2001_039_kernel2_txt.html
+ XF:linux-syncookie-bypass-filter(7461)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/7461
+ REDHAT:RHSA-2001:142
+ URL:http://www.redhat.com/support/errata/RHSA-2001-142.html
+ CONECTIVA:CLA-2001:432
+ URL:http://distro.conectiva.com.br/atualizacoes/?id=a&anuncio=000432
+ MANDRAKE:MDKSA-2001:082
+ URL:http://www.linux-mandrake.com/en/security/2001/MDKSA-2001-082.php3
+Description: Linux kernel 2.0, 2.2 and 2.4 with syncookies enabled allows remote
+attackers to bypass firewall rules by brute force guessing the cookie.
+
+Name:CVE-2001-0962
+Status: Entry
+Reference: 
+URL(Common Vulnerable and Exposures):http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0962
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2001-0962
+ BUGTRAQ:20010919 Websphere cookie/sessionid predictable
+ URL:http://archives.neohapsis.com/archives/bugtraq/2001-09/0234.html
+ BUGTRAQ:20010928 Re: Websphere cookie/sessionid predictable
+ URL:http://archives.neohapsis.com/archives/bugtraq/2001-09/0234.html
+ CONFIRM:http://www14.software.ibm.com/webapp/download/postconfig.jsp?id=4000805&pf=Multi-Platform&v=3.0.2&e=Standard+%26+Advanced+Editions&cat=&s=p
+ XF:ibm-websphere-seq-predict(7153)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/7153
+ OSVDB:5492
+ URL:http://www.osvdb.org/5492
+Description: IBM WebSphere Application Server 3.02 through 3.53 uses predictable
+session IDs for cookies, which allows remote attackers to gain
+privileges of WebSphere users via brute force guessing.
+
+Name:CVE-2001-1007
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1007
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2001-1007
+ BUGTRAQ:20010824 Starfish Truesync Desktop + REX 5000 Pro multiple vulnerabilities
+ URL:http://www.securityfocus.com/archive/1/210067
+Description: Starfish Truesync Desktop 2.0b as used on the REX 5000 PDA uses a
+small keyspace for device keys and does not impose a delay when an
+incorrect key is entered, which allows attackers to more quickly guess
+the key via a brute force attack.
+
+Name:CVE-2001-1175
+Status: Entry
+Reference: 
+URL(Common Vulnerable and Exposures):http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1175
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2001-1175
+ REDHAT:RHSA-2001:095
+ URL:http://www.redhat.com/support/errata/RHSA-2001-095.html
+ REDHAT:RHSA-2001:132
+ URL:http://www.redhat.com/support/errata/RHSA-2001-132.html
+ XF:vipw-world-readable-files(6851)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/6851
+ BID:3036
+ URL:http://www.securityfocus.com/bid/3036
+Description: vipw in the util-linux package before 2.10 causes /etc/shadow to be
+world-readable in some cases, which would make it easier for local
+users to perform brute force password guessing.
+
+Name:CVE-2001-1280
+Status: Candidate
+Reference: 
+URL(Common Vulnerable and Exposures): http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1280
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2001-1280
+ BUGTRAQ:20011011 Vulnerabilities in Ipswitch IMail Server 7.04
+ URL:http://archives.neohapsis.com/archives/bugtraq/2001-10/0076.html
+ MISC:http://www.ipswitch.com/Support/IMail/news.html
+ BID:3424
+ URL:http://www.securityfocus.com/bid/3424
+Description: POP3 Server for Ipswitch IMail 7.04 and earlier generates different
+responses to valid and invalid user names, which allows remote
+attackers to determine users on the system.
+
+Name:CVE-2001-1291
+Status: Entry
+Reference: 
+URL(Common Vulnerable and Exposures):http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1291
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2001-1291
+ BUGTRAQ:20010712 3Com TelnetD
+ URL:http://www.securityfocus.com/archive/1/196957
+ XF:3com-telnetd-brute-force(6855)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/6855
+ BID:3034
+ URL:http://www.securityfocus.com/bid/3034
+Description: The telnet server for 3Com hardware such as PS40 SuperStack II does
+not delay or disconnect remote attackers who provide an incorrect
+username or password, which makes it easier to break into the server
+via brute force password guessing.
+
+Name:CVE-2002-0395
+Status: Entry
+Reference: 
+URL(Common Vulnerable and Exposures):http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0395
+URL(National Vulnerability Database): https://nvd.nist.gov/vuln/detail/CVE-2002-0395
+ ATSTAKE:A060502-1
+ URL:http://www.atstake.com/research/advisories/2002/a060502-1.txt
+ XF:redm-1050ap-tftp-bruteforce(9264)
+ URL:https://exchange.xforce.ibmcloud.com/vulnerabilities/9264
+Description: The TFTP server for Red-M 1050 (Bluetooth Access Point) can not be
+disabled and makes it easier for remote attackers to crack the
+administration password via brute force methods.
+
